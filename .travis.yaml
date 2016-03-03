@@ -1,0 +1,13 @@
+language: go
+
+go:
+- 1.5
+- 1.6
+
+notifications:
+  irc: "irc.freenode.net#masterminds"
+
+script:
+- go install
+- mkdir -p testdata/{foo/.git,bar/.svn,baz/.hg,qux/.bzr}
+- rmvcsdir testdata
