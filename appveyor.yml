@@ -21,6 +21,6 @@ test_script:
 - mkdir "testdata\bar\.svn"
 - mkdir "testdata\baz\.bzr"
 - mkdir "testdata\qux\.hg"
-- rmvcsdir testdata
+- go run main.go testdata
 
 deploy: off
