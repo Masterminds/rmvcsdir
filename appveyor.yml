@@ -17,10 +17,10 @@ build_script:
 - go install
 
 test_script:
-- mkdir testdata/foo/.git
-- mkdir testdata/bar/.svn
-- mkdir testdata/baz/.bzr
-- mkdir testdata/qux/.hg
+- mkdir "testdata\foo\.git"
+- mkdir "testdata\bar\.svn"
+- mkdir "testdata\baz\.bzr"
+- mkdir "testdata\qux\.hg"
 - rmvcsdir testdata
 
 deploy: off
